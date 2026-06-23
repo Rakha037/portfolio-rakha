@@ -207,10 +207,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Clipboard buttons
     const copyButtons = document.querySelectorAll(".copy-btn");
     const toast = document.getElementById("toast");
-    
-    // Contact Form
-    const contactForm = document.getElementById("contact-form");
-    const formStatus = document.getElementById("form-status");
 
     /* --------------------------------------------------------------------------
        THEME CONTROLLER
@@ -455,40 +451,4 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
-
-    /* --------------------------------------------------------------------------
-       CONTACT FORM SUBMIT CONTROLLER
-       -------------------------------------------------------------------------- */
-    if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            
-            // Get form values
-            const nameInput = document.getElementById("name").value.trim();
-            const emailInput = document.getElementById("email").value.trim();
-            const messageInput = document.getElementById("message").value.trim();
-            
-            if (nameInput && emailInput && messageInput) {
-                // Mock form submission process
-                formStatus.className = "form-status";
-                formStatus.textContent = "Sending message...";
-                
-                setTimeout(() => {
-                    formStatus.className = "form-status success";
-                    formStatus.textContent = `Thank you, ${nameInput}! Your message was successfully simulated as sent.`;
-                    
-                    // Clear inputs
-                    contactForm.reset();
-                    
-                    // Clear status after 5 seconds
-                    setTimeout(() => {
-                        formStatus.textContent = "";
-                    }, 5000);
-                }, 1000);
-            } else {
-                formStatus.className = "form-status error";
-                formStatus.textContent = "Please complete all fields!";
-            }
-        });
-    }
 });
