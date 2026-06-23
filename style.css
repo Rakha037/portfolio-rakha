@@ -1450,7 +1450,7 @@ ul {
 .modal-gallery-img {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 650px;
     object-fit: contain;
     display: block;
     border-radius: var(--border-radius-md);
