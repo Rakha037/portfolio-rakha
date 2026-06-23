@@ -17,8 +17,8 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_6_img_1.png", caption: "Streamlit web interface displaying the actual vs. predicted stock prices of PT Vale Indonesia Tbk (INCO) in a time-series line chart." },
-            { src: "images/page_6_img_2.png", caption: "Close-up of the evaluation metrics panel displaying the achieved Mean Absolute Percentage Error (MAPE) of 6.8% and parameter tuning logs." }
+            { src: "images/page_6_img_2.png", caption: "Streamlit web interface displaying the actual vs. predicted stock prices of PT Vale Indonesia Tbk (INCO) in a time-series line chart." },
+            { src: "images/page_6_img_3.png", caption: "Close-up of the evaluation metrics panel displaying the achieved Mean Absolute Percentage Error (MAPE) of 6.8% and parameter tuning logs." }
         ]
     },
     2: {
@@ -36,8 +36,8 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_7_img_3.jpg", caption: "YOLOv5 object detection model recognizing and drawing a bounding box around a burn wound, showing severity classification and confidence score." },
-            { src: "images/page_7_img_4.jpg", caption: "Web application dashboard built with Streamlit that enables users to upload wound photos, analyze them, and read immediate treatment recommendations." }
+            { src: "images/page_7_img_4.jpg", caption: "YOLOv5 object detection model recognizing and drawing a bounding box around a burn wound, showing severity classification and confidence score." },
+            { src: "images/page_7_img_5.jpg", caption: "Web application dashboard built with Streamlit that enables users to upload wound photos, analyze them, and read immediate treatment recommendations." }
         ]
     },
     3: {
@@ -55,9 +55,9 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_8_img_5.png", caption: "Real-time fire detection model identifying flame bodies in an industrial setting, marked by bounding boxes." },
-            { src: "images/page_8_img_6.png", caption: "The object detection model detecting smoke plumes and identifying pre-flame conditions under dark lighting." },
-            { src: "images/page_8_img_7.png", caption: "Web-based safety monitoring dashboard containing live video feeds with bounding boxes and emergency fire alert triggers." }
+            { src: "images/page_8_img_6.png", caption: "Real-time fire detection model identifying flame bodies in an industrial setting, marked by bounding boxes." },
+            { src: "images/page_8_img_7.png", caption: "The object detection model detecting smoke plumes and identifying pre-flame conditions under dark lighting." },
+            { src: "images/page_8_img_8.png", caption: "Web-based safety monitoring dashboard containing live video feeds with bounding boxes and emergency fire alert triggers." }
         ]
     },
     4: {
@@ -75,9 +75,9 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_9_img_8.png", caption: "Google Looker Studio dashboard main page highlighting Salatiga City's key macroeconomic indicators, population distribution, and demographics." },
-            { src: "images/page_9_img_9.png", caption: "Interactive chart section displaying Salatiga's annual unemployment rates and labor force participation statistics." },
-            { src: "images/page_9_img_10.png", caption: "Socioeconomic dashboard tab showing regional poverty trends, Gini ratio tracking, and historical economic growth." }
+            { src: "images/page_9_img_9.png", caption: "Google Looker Studio dashboard main page highlighting Salatiga City's key macroeconomic indicators, population distribution, and demographics." },
+            { src: "images/page_9_img_10.png", caption: "Interactive chart section displaying Salatiga's annual unemployment rates and labor force participation statistics." },
+            { src: "images/page_9_img_11.png", caption: "Socioeconomic dashboard tab showing regional poverty trends, Gini ratio tracking, and historical economic growth." }
         ]
     },
     5: {
@@ -95,8 +95,8 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_10_img_11.png", caption: "Interactive Google Looker Studio dashboard showing salary distribution by job title, experience level, and company size." },
-            { src: "images/page_10_img_12.png", caption: "Geographical heat map dashboard tracking global average salaries in Data Science and the density of fully remote positions by country." }
+            { src: "images/page_10_img_12.png", caption: "Interactive Google Looker Studio dashboard showing salary distribution by job title, experience level, and company size." },
+            { src: "images/page_10_img_13.png", caption: "Geographical heat map dashboard tracking global average salaries in Data Science and the density of fully remote positions by country." }
         ]
     },
     6: {
@@ -114,8 +114,8 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_11_img_13.png", caption: "Tableau dashboard detailing global video game sales trends, tracking peak sales years, and console market share." },
-            { src: "images/page_11_img_14.png", caption: "Regional sales breakdown charts (North America, Europe, Japan, Rest of World) highlighting genre popularity and platform performance." }
+            { src: "images/page_11_img_14.png", caption: "Tableau dashboard detailing global video game sales trends, tracking peak sales years, and console market share." },
+            { src: "images/page_11_img_15.png", caption: "Regional sales breakdown charts (North America, Europe, Japan, Rest of World) highlighting genre popularity and platform performance." }
         ]
     },
     7: {
@@ -133,7 +133,7 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_12_img_15.png", caption: "Comprehensive Tableau dashboard illustrating global crop yield comparison against chemical pesticide consumption, CO2 emissions, and soil health metrics." }
+            { src: "images/page_12_img_16.png", caption: "Comprehensive Tableau dashboard illustrating global crop yield comparison against chemical pesticide consumption, CO2 emissions, and soil health metrics." }
         ]
     },
     8: {
@@ -151,9 +151,9 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_14_img_17.png", caption: "Clean responsive corporate landing page for PT Mulia Global Solusi built with Laravel 11 and Bootstrap 5." },
-            { src: "images/page_14_img_18.png", caption: "Admin control panel for PT MGS showing the database interface for inputting, updating, and categorizing new product catalog entries." },
-            { src: "images/page_14_img_19.png", caption: "Looker Studio dashboard embedded into the Laravel admin module to track popular items, product entry metrics, and catalog status." }
+            { src: "images/page_14_img_18.png", caption: "Clean responsive corporate landing page for PT Mulia Global Solusi built with Laravel 11 and Bootstrap 5." },
+            { src: "images/page_14_img_19.png", caption: "Admin control panel for PT MGS showing the database interface for inputting, updating, and categorizing new product catalog entries." },
+            { src: "images/page_14_img_20.png", caption: "Looker Studio dashboard embedded into the Laravel admin module to track popular items, product entry metrics, and catalog status." }
         ]
     },
     9: {
@@ -171,7 +171,7 @@ const projectsData = {
         github: "#",
         demo: "#",
         gallery: [
-            { src: "images/page_13_img_16.png", caption: "Interactive administration dashboard for PBPHH permit recapitulation in Dinas Kehutanan East Java, showing logs, filters, and licensing history." }
+            { src: "images/page_13_img_17.png", caption: "Interactive administration dashboard for PBPHH permit recapitulation in Dinas Kehutanan East Java, showing logs, filters, and licensing history." }
         ]
     }
 };
