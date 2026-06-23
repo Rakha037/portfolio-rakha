@@ -784,18 +784,32 @@ ul {
     box-shadow: var(--shadow-premium);
 }
 
-.project-img-placeholder {
-    height: 180px;
-    background: linear-gradient(135deg, rgba(59,130,246,0.15) 0%, rgba(79,70,229,0.15) 100%);
+.project-card-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-secondary);
     border-bottom: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background var(--transition-smooth);
 }
 
-.project-card:hover .project-img-placeholder {
-    background: linear-gradient(135deg, rgba(59,130,246,0.25) 0%, rgba(79,70,229,0.25) 100%);
+.project-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+}
+
+.project-card:hover .project-cover {
+    transform: scale(1.05);
+}
+
+.project-img-fallback {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(59,130,246,0.15) 0%, rgba(79,70,229,0.15) 100%);
 }
 
 .project-icon {
@@ -1314,4 +1328,37 @@ ul {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* --------------------------------------------------------------------------
+   MODAL GALLERY STYLES
+   -------------------------------------------------------------------------- */
+.modal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.modal-gallery-item {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    background-color: var(--bg-secondary);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.modal-gallery-item:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.modal-gallery-img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    display: block;
 }

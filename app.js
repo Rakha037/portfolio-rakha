@@ -15,7 +15,8 @@ const projectsData = {
             "Mengevaluasi performa model menggunakan metrik Mean Absolute Percentage Error (MAPE), dan berhasil mencapai nilai MAPE sebesar 6.8%, membuktikan keefektifan model dalam menangkap tren non-linear harga saham."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_6_img_1.png", "images/page_6_img_2.png"]
     },
     2: {
         title: "TERLUKA - Burn Wound Detection",
@@ -30,7 +31,8 @@ const projectsData = {
             "Mengintegrasikan model hasil latihan ke antarmuka aplikasi web berbasis Streamlit, memungkinkan pengguna umum mengunggah foto luka dan menerima diagnosis instan beserta pertolongan pertama yang direkomendasikan secara real-time."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_7_img_3.jpg", "images/page_7_img_4.jpg"]
     },
     3: {
         title: "Industrial Fire Detection System",
@@ -45,7 +47,8 @@ const projectsData = {
             "Menghubungkan model deteksi ke dasbor monitoring interaktif yang mampu menyajikan visualisasi kamera langsung (live camera streaming) dengan penggambaran bounding box deteksi kebakaran secara instan."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_8_img_5.png", "images/page_8_img_6.png", "images/page_8_img_7.png"]
     },
     4: {
         title: "Socioeconomic Dashboard Salatiga",
@@ -60,7 +63,8 @@ const projectsData = {
             "Membantu menyederhanakan data kompleks menjadi wawasan siap pakai untuk perencanaan program kesejahteraan daerah."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_9_img_8.png", "images/page_9_img_9.png", "images/page_9_img_10.png"]
     },
     5: {
         title: "Data Science Salary Analysis",
@@ -75,7 +79,8 @@ const projectsData = {
             "Mengintegrasikan fitur filter interaktif multi-dimensi guna mempermudah pencarian tren kompensasi kerja di sektor data."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_10_img_11.png", "images/page_10_img_12.png"]
     },
     6: {
         title: "Game Sales Analysis Dashboard",
@@ -90,7 +95,8 @@ const projectsData = {
             "Membuat presentasi visual berbasis Tableau Story untuk menjelaskan performa genre game terpopuler kepada audiens umum."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_11_img_13.png", "images/page_11_img_14.png"]
     },
     7: {
         title: "Agricultural Sector Sustainability",
@@ -105,7 +111,8 @@ const projectsData = {
             "Menyajikan analisis komparatif akses irigasi lahan tani antartipe komoditas tanaman pangan dunia."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_12_img_15.png"]
     },
     8: {
         title: "PT Mulia Global Solusi Platform",
@@ -120,7 +127,8 @@ const projectsData = {
             "Menghubungkan basis data website dengan Google Looker Studio, memungkinkan tim internal mengidentifikasi tren produk terpopuler secara visual 2x lebih cepat dibanding metode manual sebelumnya."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_14_img_17.png", "images/page_14_img_18.png", "images/page_14_img_19.png"]
     },
     9: {
         title: "PBPHH Licensing Recap Dashboard",
@@ -135,7 +143,8 @@ const projectsData = {
             "Menyematkan grafik tren produksi tahunan hasil hutan terpadu menggunakan pustaka Chart.js untuk mempermudah pemantauan oleh otoritas kehutanan tingkat provinsi."
         ],
         github: "#",
-        demo: "#"
+        demo: "#",
+        gallery: ["images/page_13_img_16.png"]
     }
 };
 
@@ -299,6 +308,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Generate details bullet points
                 const detailsList = data.details.map(point => `<li>${point}</li>`).join("");
 
+                // Generate gallery HTML if exists
+                let galleryHTML = "";
+                if (data.gallery && data.gallery.length > 0) {
+                    const galleryItems = data.gallery.map(img => `
+                        <div class="modal-gallery-item">
+                            <img src="${img}" alt="${data.title}" class="modal-gallery-img" onerror="this.parentElement.style.display='none';">
+                        </div>
+                    `).join("");
+                    galleryHTML = `
+                        <div class="modal-description">
+                            <h3>Tangkapan Layar & Visualisasi</h3>
+                            <div class="modal-gallery">
+                                ${galleryItems}
+                            </div>
+                        </div>
+                    `;
+                }
+
                 // Render content inside modal body
                 modalBodyContent.innerHTML = `
                     <div class="modal-body">
@@ -328,6 +355,8 @@ document.addEventListener("DOMContentLoaded", () => {
                                 ${detailsList}
                             </ul>
                         </div>
+
+                        ${galleryHTML}
 
                         <div class="modal-description" style="margin-bottom: 0;">
                             <h3>Teknologi Yang Digunakan</h3>
