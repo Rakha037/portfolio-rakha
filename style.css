@@ -1504,17 +1504,100 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   CONTACT CARD GRID STYLES
+   CONTACT CARD GRID STYLES (Clean centered vertical alignment)
    -------------------------------------------------------------------------- */
 .contact-center-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-section .contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 32px 24px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.contact-section .contact-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-premium);
+}
+
+.contact-section .contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transition: background-color var(--transition-fast);
+}
+
+.contact-section .contact-card:hover::before {
+    background-color: var(--accent-color);
+}
+
+.contact-section .card-icon {
+    width: 56px;
+    height: 56px;
+    background-color: var(--accent-light);
+    color: var(--accent-color);
+    border-radius: var(--border-radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.contact-section .card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-section .card-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-section .card-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    word-break: break-all;
+}
+
+.contact-section .copy-btn, .contact-section .card-link {
+    margin-top: 8px;
 }
