@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------
-   PROJECTS DATA DATABASE
+   PROJECTS DATA DATABASE (English Version with Image Captions)
    -------------------------------------------------------------------------- */
 const projectsData = {
     1: {
@@ -7,144 +7,172 @@ const projectsData = {
         category: "Data Science & AI",
         tools: ["Python", "TensorFlow", "Streamlit", "Pandas", "NumPy"],
         role: "Data Scientist & Developer",
-        duration: "Studi Mandiri (2025)",
-        description: "Pengembangan model pembelajaran mendalam (deep learning) berbasis Long Short-Term Memory (LSTM) untuk memprediksi pergerakan harga saham harian PT Vale Indonesia Tbk (INCO) dengan menggunakan data historis deret waktu.",
+        duration: "Independent Study (2025)",
+        description: "Development of a deep learning model based on Long Short-Term Memory (LSTM) to predict the daily stock price of PT Vale Indonesia Tbk (INCO) using historical time-series data.",
         details: [
-            "Melakukan proses persiapan data ujung-ke-ujung (end-to-end), termasuk pembersihan data, penskalaan fitur menggunakan MinMax Scaler, dan pembuatan sekuens data deret waktu.",
-            "Melatih dan mengoptimasi model LSTM melalui eksperimen sistematis pada hyperparameter seperti jumlah neuron, dropout rate, batch size, dan jumlah epoch.",
-            "Mengevaluasi performa model menggunakan metrik Mean Absolute Percentage Error (MAPE), dan berhasil mencapai nilai MAPE sebesar 6.8%, membuktikan keefektifan model dalam menangkap tren non-linear harga saham."
+            "Executed end-to-end data preparation workflows, including data cleaning, MinMax scaling, and time-series sequence generation.",
+            "Trained and optimized the LSTM model through systematic experiments on hyperparameters such as hidden units, dropout rates, batch sizes, and epochs.",
+            "Evaluated model performance using Mean Absolute Percentage Error (MAPE), achieving a low forecasting error of 6.8%, demonstrating the model's effectiveness in capturing non-linear stock trends."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_6_img_1.png", "images/page_6_img_2.png"]
+        gallery: [
+            { src: "images/page_6_img_1.png", caption: "Streamlit web interface displaying the actual vs. predicted stock prices of PT Vale Indonesia Tbk (INCO) in a time-series line chart." },
+            { src: "images/page_6_img_2.png", caption: "Close-up of the evaluation metrics panel displaying the achieved Mean Absolute Percentage Error (MAPE) of 6.8% and parameter tuning logs." }
+        ]
     },
     2: {
         title: "TERLUKA - Burn Wound Detection",
         category: "Data Science & AI",
         tools: ["YOLOv5", "OpenCV", "Streamlit", "PyTorch", "Python"],
         role: "Machine Learning Engineer",
-        duration: "Proyek Kolaboratif (2025)",
-        description: "Platform kecerdasan buatan (AI) terintegrasi untuk pendeteksian luka bakar otomatis secara cepat dan klasifikasi tingkat keparahan luka bakar berdasarkan citra medis.",
+        duration: "Collaborative Project (2025)",
+        description: "An integrated artificial intelligence platform designed to automate skin burn wound identification and classify severity levels based on image analysis.",
         details: [
-            "Mengelola dataset gambar luka bakar, melakukan prapemrosesan gambar, penotasian manual (annotation), serta augmentasi citra untuk meningkatkan ketangguhan model dari anomali cahaya.",
-            "Melatih model berbasis algoritma YOLOv5 (Object Detection) dan mencapai tingkat akurasi validasi sebesar 85% untuk pengenalan area luka dan kelas keparahannya.",
-            "Mengintegrasikan model hasil latihan ke antarmuka aplikasi web berbasis Streamlit, memungkinkan pengguna umum mengunggah foto luka dan menerima diagnosis instan beserta pertolongan pertama yang direkomendasikan secara real-time."
+            "Curated the burn wound dataset, performed image annotation, dataset preprocessing, and data augmentation to improve model resilience against lighting variations.",
+            "Trained an object detection model based on YOLOv5, achieving 85% accuracy on validation datasets for wound identification and severity classification.",
+            "Integrated the trained model into a Streamlit-based web interface, enabling users to upload injury images, receive instant diagnosis, and view first-aid recommendations in real-time."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_7_img_3.jpg", "images/page_7_img_4.jpg"]
+        gallery: [
+            { src: "images/page_7_img_3.jpg", caption: "YOLOv5 object detection model recognizing and drawing a bounding box around a burn wound, showing severity classification and confidence score." },
+            { src: "images/page_7_img_4.jpg", caption: "Web application dashboard built with Streamlit that enables users to upload wound photos, analyze them, and read immediate treatment recommendations." }
+        ]
     },
     3: {
         title: "Industrial Fire Detection System",
         category: "Data Science & AI",
         tools: ["YOLOv8", "Torch", "OpenCV", "Python", "Streamlit"],
         role: "Lead AI Developer",
-        duration: "Proyek Mandiri (2025)",
-        description: "Sistem deteksi kebakaran real-time berbasis YOLOv8 untuk mendukung otomatisasi pemantauan keselamatan kerja di area industri dan pergudangan.",
+        duration: "Independent Project (2025)",
+        description: "Real-time fire detection system based on YOLOv8 to support automated workplace safety monitoring in industrial and warehouse environments.",
         details: [
-            "Melakukan pengumpulan dan pelabelan dataset khusus api dan asap industri dengan teknik data augmentation untuk menghindari overfitting.",
-            "Melatih model YOLOv8 Object Detection dengan framework PyTorch hingga memperoleh akurasi pemantauan sebesar 82% pada data pengujian video.",
-            "Menghubungkan model deteksi ke dasbor monitoring interaktif yang mampu menyajikan visualisasi kamera langsung (live camera streaming) dengan penggambaran bounding box deteksi kebakaran secara instan."
+            "Collected and labeled custom datasets of industrial fire and smoke, applying augmentation techniques to prevent model overfitting.",
+            "Trained the YOLOv8 object detection model using PyTorch, achieving a detection accuracy of 82% on video test files.",
+            "Integrated the model with a web monitoring dashboard supporting live camera streams with instant bounding box visualizations of detected fire hazards."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_8_img_5.png", "images/page_8_img_6.png", "images/page_8_img_7.png"]
+        gallery: [
+            { src: "images/page_8_img_5.png", caption: "Real-time fire detection model identifying flame bodies in an industrial setting, marked by bounding boxes." },
+            { src: "images/page_8_img_6.png", caption: "The object detection model detecting smoke plumes and identifying pre-flame conditions under dark lighting." },
+            { src: "images/page_8_img_7.png", caption: "Web-based safety monitoring dashboard containing live video feeds with bounding boxes and emergency fire alert triggers." }
+        ]
     },
     4: {
         title: "Socioeconomic Dashboard Salatiga",
-        category: "BI & Visualisasi Data",
-        tools: ["Google Looker Studio", "Google Sheets", "Pembersihan Data"],
+        category: "BI & Data Viz",
+        tools: ["Google Looker Studio", "Google Sheets", "Data Cleaning"],
         role: "Data Analyst",
-        duration: "Riset Akademik (2025)",
-        description: "Dasbor interaktif visualisasi data sosial ekonomi Kota Salatiga Jawa Tengah untuk mendukung diseminasi informasi strategis daerah secara transparan.",
+        duration: "Academic Research (2025)",
+        description: "An interactive visualization dashboard of socioeconomic data for Salatiga City, Central Java, supporting transparent public dissemination of regional macro indicators.",
         details: [
-            "Mengumpulkan, menstandarkan, dan mengintegrasikan indikator makro sosial ekonomi seperti jumlah penduduk, tingkat pengangguran terbuka (TPT), angka kemiskinan, tingkat pendidikan, dan laju pertumbuhan ekonomi daerah.",
-            "Merancang arsitektur visual dasbor Looker Studio yang interaktif, bersih, dan informatif sehingga memudahkan pemangku kepentingan dalam melakukan perbandingan data antartahun.",
-            "Membantu menyederhanakan data kompleks menjadi wawasan siap pakai untuk perencanaan program kesejahteraan daerah."
+            "Gathered, standardized, and integrated regional socioeconomic data such as population distribution, open unemployment rates, poverty statistics, and economic growth.",
+            "Designed Looker Studio report pages with clean, interactive, and user-friendly layouts to help non-technical stakeholders compare yearly metrics easily.",
+            "Synthesized complex datasets into clear, actionable insights for regional welfare planning and strategy."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_9_img_8.png", "images/page_9_img_9.png", "images/page_9_img_10.png"]
+        gallery: [
+            { src: "images/page_9_img_8.png", caption: "Google Looker Studio dashboard main page highlighting Salatiga City's key macroeconomic indicators, population distribution, and demographics." },
+            { src: "images/page_9_img_9.png", caption: "Interactive chart section displaying Salatiga's annual unemployment rates and labor force participation statistics." },
+            { src: "images/page_9_img_10.png", caption: "Socioeconomic dashboard tab showing regional poverty trends, Gini ratio tracking, and historical economic growth." }
+        ]
     },
     5: {
         title: "Data Science Salary Analysis",
-        category: "BI & Visualisasi Data",
-        tools: ["Power BI", "Looker Studio", "Excel", "Analisis Deskriptif"],
+        category: "BI & Data Viz",
+        tools: ["Power BI", "Looker Studio", "Excel", "Descriptive Analysis"],
         role: "BI Developer",
-        duration: "Studi Kasus Proyek (2024)",
-        description: "Dasbor analitis interaktif untuk mengeksplorasi dan menganalisis tren gaji profesional di bidang Data Science secara global untuk periode 2020-2022.",
+        duration: "Case Study Project (2024)",
+        description: "An interactive business intelligence dashboard to explore and analyze global professional compensation trends in the Data Science sector for the 2020-2022 period.",
         details: [
-            "Menyajikan visualisasi komparatif gaji rata-rata, jenis pekerjaan dengan bayaran tertinggi, sebaran geografis lokasi kerja, serta persentase sebaran sistem kerja jarak jauh (remote work).",
-            "Menganalisis hubungan antara tingkat pengalaman profesional (Entry, Mid-Level, Senior, Executive) dan ukuran perusahaan dengan total kompensasi tahunan.",
-            "Mengintegrasikan fitur filter interaktif multi-dimensi guna mempermudah pencarian tren kompensasi kerja di sektor data."
+            "Presented comparative visualizations of average salaries, highest-paying job titles, geographic distributions, and remote work ratios by country.",
+            "Analyzed salary variations based on professional experience level (Entry, Mid, Senior, Executive) and company size to reveal salary patterns.",
+            "Configured multi-dimensional filter panels to simplify the investigation of compensation structures across the global data workforce."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_10_img_11.png", "images/page_10_img_12.png"]
+        gallery: [
+            { src: "images/page_10_img_11.png", caption: "Interactive Google Looker Studio dashboard showing salary distribution by job title, experience level, and company size." },
+            { src: "images/page_10_img_12.png", caption: "Geographical heat map dashboard tracking global average salaries in Data Science and the density of fully remote positions by country." }
+        ]
     },
     6: {
         title: "Game Sales Analysis Dashboard",
-        category: "BI & Visualisasi Data",
+        category: "BI & Data Viz",
         tools: ["Tableau", "MS Excel", "Forecasting"],
         role: "Data Analyst",
-        duration: "Proyek Mandiri (2024)",
-        description: "Dasbor intelijen bisnis yang mengubah data transaksi penjualan game global menjadi visualisasi tren performa industri *gaming* lintas kawasan.",
+        duration: "Independent Project (2024)",
+        description: "A business intelligence dashboard transforming raw global game transaction records into analytical charts of sales performance across gaming regions.",
         details: [
-            "Menganalisis performa penjualan video game secara geografis di berbagai wilayah utama (North America, Europe, Japan, dan negara lainnya).",
-            "Mengevaluasi pangsa pasar dari berbagai platform konsol game populer serta menyajikan prediksi/peramalan sederhana untuk laju penjualan di masa mendatang.",
-            "Membuat presentasi visual berbasis Tableau Story untuk menjelaskan performa genre game terpopuler kepada audiens umum."
+            "Analyzed video game transaction performance across major sales territories (North America, Europe, Japan, and other regions).",
+            "Evaluated the market share of major console platforms and provided sales volume forecasts for upcoming console cycles.",
+            "Created a structured Tableau Story presentation to communicate gaming market trends to general business audiences."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_11_img_13.png", "images/page_11_img_14.png"]
+        gallery: [
+            { src: "images/page_11_img_13.png", caption: "Tableau dashboard detailing global video game sales trends, tracking peak sales years, and console market share." },
+            { src: "images/page_11_img_14.png", caption: "Regional sales breakdown charts (North America, Europe, Japan, Rest of World) highlighting genre popularity and platform performance." }
+        ]
     },
     7: {
         title: "Agricultural Sector Sustainability",
-        category: "BI & Visualisasi Data",
-        tools: ["Tableau", "MS Excel", "Analisis Korelasi"],
+        category: "BI & Data Viz",
+        tools: ["Tableau", "MS Excel", "Correlation Analysis"],
         role: "Business Statistician",
-        duration: "Studi Kasus (2024)",
-        description: "Dasbor visualisasi interaktif untuk menganalisis produktivitas serta isu keberlanjutan lingkungan pada sektor pertanian global di berbagai negara.",
+        duration: "Case Study (2024)",
+        description: "An interactive environmental dashboard analyzing agricultural productivity and ecological sustainability indicators across countries over multiple years.",
         details: [
-            "Menganalisis dan memvisualisasikan korelasi antara volume produksi hasil panen komoditas utama dengan tingkat pendapatan ekonomi dari sektor agraria.",
-            "Memetakan distribusi geografis emisi gas karbon dioksida (CO₂), tingkat konsumsi pestisida pertanian, dan hubungannya dengan kesehatan tanah permukaan.",
-            "Menyajikan analisis komparatif akses irigasi lahan tani antartipe komoditas tanaman pangan dunia."
+            "Analyzed and mapped the correlation between crop production volumes and regional economic income from agricultural activities.",
+            "Visualized the global distribution of greenhouse gas emissions (CO₂), pesticide application rates, and their impact on soil quality.",
+            "Presented a comparative view of agricultural irrigation access and land use practices across different staple food crops."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_12_img_15.png"]
+        gallery: [
+            { src: "images/page_12_img_15.png", caption: "Comprehensive Tableau dashboard illustrating global crop yield comparison against chemical pesticide consumption, CO2 emissions, and soil health metrics." }
+        ]
     },
     8: {
         title: "PT Mulia Global Solusi Platform",
         category: "Web Development",
         tools: ["Laravel 11", "PHP", "MySQL", "Bootstrap 5", "Looker Studio"],
         role: "IT Developer Intern",
-        duration: "Magang (Jan 2026 - Apr 2026)",
-        description: "Pengembangan modul situs web profil perusahaan, dasbor administrasi internal, dan modul input data produk untuk mempercepat otomatisasi manajemen data barang dagang.",
+        duration: "Internship (Jan 2026 - Apr 2026)",
+        description: "Development of corporate website profile modules, internal admin dashboards, and product entry forms to automate catalog management and accelerate internal operations.",
         details: [
-            "Mengembangkan modul backend menggunakan framework Laravel 11 untuk penanganan CRUD data produk secara aman dengan database MySQL.",
-            "Membangun dasbor admin interaktif berbasis Bootstrap 5 untuk pelacakan alur data produk masuk-keluar.",
-            "Menghubungkan basis data website dengan Google Looker Studio, memungkinkan tim internal mengidentifikasi tren produk terpopuler secara visual 2x lebih cepat dibanding metode manual sebelumnya."
+            "Created backend modules using Laravel 11 for secure CRUD operations of product catalogs stored in a MySQL database.",
+            "Designed a clean admin control panel using Bootstrap 5 to track product entries, catalog changes, and dashboard logs.",
+            "Linked the website database to Looker Studio reports, enabling team members to identify trending items 2x faster than using manual reporting."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_14_img_17.png", "images/page_14_img_18.png", "images/page_14_img_19.png"]
+        gallery: [
+            { src: "images/page_14_img_17.png", caption: "Clean responsive corporate landing page for PT Mulia Global Solusi built with Laravel 11 and Bootstrap 5." },
+            { src: "images/page_14_img_18.png", caption: "Admin control panel for PT MGS showing the database interface for inputting, updating, and categorizing new product catalog entries." },
+            { src: "images/page_14_img_19.png", caption: "Looker Studio dashboard embedded into the Laravel admin module to track popular items, product entry metrics, and catalog status." }
+        ]
     },
     9: {
         title: "PBPHH Licensing Recap Dashboard",
         category: "Web Development",
         tools: ["Laravel 11", "PHP", "MySQL", "Bootstrap 5", "VSCode"],
         role: "Fullstack Web Developer",
-        duration: "Magang Dishut Jatim (Jan 2025 - Feb 2025)",
-        description: "Dasbor administrasi rekapitulasi data Perizinan Berusaha Pengolahan Hasil Hutan (PBPHH) Dinas Kehutanan Provinsi Jawa Timur untuk menggantikan perekaman data manual.",
+        duration: "Dishut Jatim Internship (Jan 2025 - Feb 2025)",
+        description: "A web-based administration dashboard for recapitulating Forest Product Processing Business Permits (PBPHH) at the East Java Forestry Service, replacing manual ledger entries.",
         details: [
-            "Merancang skema database relasional MySQL untuk menampung riwayat penerbitan izin PBPHH secara bersih dan menstandarkan format data historis izin guna meminimalisir anomali data.",
-            "Membangun antarmuka admin dasbor interaktif berbasis Bootstrap 5 untuk penyaringan data izin berdasarkan wilayah kabupaten, tipe badan usaha, dan tahun penerbitan.",
-            "Menyematkan grafik tren produksi tahunan hasil hutan terpadu menggunakan pustaka Chart.js untuk mempermudah pemantauan oleh otoritas kehutanan tingkat provinsi."
+            "Designed a relational database schema in MySQL to store permit transaction logs cleanly and resolve data anomalies.",
+            "Built an interactive admin search interface using Bootstrap 5 to filter permit records by district, business category, and issuance year.",
+            "Embedded dynamic forestry production charts using Chart.js to support provincial authorities in tracking annual forest yield trends."
         ],
         github: "#",
         demo: "#",
-        gallery: ["images/page_13_img_16.png"]
+        gallery: [
+            { src: "images/page_13_img_16.png", caption: "Interactive administration dashboard for PBPHH permit recapitulation in Dinas Kehutanan East Java, showing logs, filters, and licensing history." }
+        ]
     }
 };
 
@@ -308,17 +336,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Generate details bullet points
                 const detailsList = data.details.map(point => `<li>${point}</li>`).join("");
 
-                // Generate gallery HTML if exists
+                // Generate gallery HTML if exists with descriptions
                 let galleryHTML = "";
                 if (data.gallery && data.gallery.length > 0) {
-                    const galleryItems = data.gallery.map(img => `
+                    const galleryItems = data.gallery.map(item => `
                         <div class="modal-gallery-item">
-                            <img src="${img}" alt="${data.title}" class="modal-gallery-img" onerror="this.parentElement.style.display='none';">
+                            <div class="modal-gallery-img-container">
+                                <img src="${item.src}" alt="${data.title}" class="modal-gallery-img" onerror="this.parentElement.parentElement.style.display='none';">
+                            </div>
+                            <div class="modal-gallery-caption">${item.caption}</div>
                         </div>
                     `).join("");
                     galleryHTML = `
                         <div class="modal-description">
-                            <h3>Tangkapan Layar & Visualisasi</h3>
+                            <h3>Project Screenshots & Visualizations</h3>
                             <div class="modal-gallery">
                                 ${galleryItems}
                             </div>
@@ -337,20 +368,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         <div class="modal-meta-grid">
                             <div class="meta-item">
-                                <span class="meta-label">Peran</span>
+                                <span class="meta-label">Role</span>
                                 <span class="meta-value">${data.role}</span>
                             </div>
                             <div class="meta-item">
-                                <span class="meta-label">Periode</span>
+                                <span class="meta-label">Period</span>
                                 <span class="meta-value">${data.duration}</span>
                             </div>
                         </div>
 
                         <div class="modal-description">
-                            <h3>Deskripsi Proyek</h3>
+                            <h3>Project Description</h3>
                             <p>${data.description}</p>
                             
-                            <h3>Kontribusi & Detail Implementasi</h3>
+                            <h3>Contributions & Key Implementations</h3>
                             <ul class="modal-bullets">
                                 ${detailsList}
                             </ul>
@@ -359,7 +390,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${galleryHTML}
 
                         <div class="modal-description" style="margin-bottom: 0;">
-                            <h3>Teknologi Yang Digunakan</h3>
+                            <h3>Technologies Used</h3>
                             <div class="skill-tags" style="margin-top: 10px; margin-bottom: 30px;">
                                 ${toolsBadges}
                             </div>
@@ -367,10 +398,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         <div class="modal-actions">
                             <a href="${data.github}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i> Repository GitHub
+                                <i class="fa-brands fa-github"></i> GitHub Repository
                             </a>
                             <a href="${data.demo}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Proyek
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                             </a>
                         </div>
                     </div>
@@ -420,7 +451,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     toast.classList.add("hidden");
                 }, 2000);
             }).catch(err => {
-                console.error("Gagal menyalin teks: ", err);
+                console.error("Failed to copy text: ", err);
             });
         });
     });
@@ -440,11 +471,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (nameInput && emailInput && messageInput) {
                 // Mock form submission process
                 formStatus.className = "form-status";
-                formStatus.textContent = "Mengirim pesan...";
+                formStatus.textContent = "Sending message...";
                 
                 setTimeout(() => {
                     formStatus.className = "form-status success";
-                    formStatus.textContent = `Terima kasih, ${nameInput}! Pesan Anda telah disimulasikan berhasil terkirim.`;
+                    formStatus.textContent = `Thank you, ${nameInput}! Your message was successfully simulated as sent.`;
                     
                     // Clear inputs
                     contactForm.reset();
@@ -456,7 +487,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }, 1000);
             } else {
                 formStatus.className = "form-status error";
-                formStatus.textContent = "Silakan lengkapi semua kolom formulir!";
+                formStatus.textContent = "Please complete all fields!";
             }
         });
     }
