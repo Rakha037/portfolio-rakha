@@ -387,18 +387,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         <div class="modal-description" style="margin-bottom: 0;">
                             <h3>Technologies Used</h3>
-                            <div class="skill-tags" style="margin-top: 10px; margin-bottom: 30px;">
+                            <div class="skill-tags" style="margin-top: 10px; margin-bottom: 0;">
                                 ${toolsBadges}
                             </div>
-                        </div>
-
-                        <div class="modal-actions">
-                            <a href="${data.github}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i> GitHub Repository
-                            </a>
-                            <a href="${data.demo}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                            </a>
                         </div>
                     </div>
                 `;
